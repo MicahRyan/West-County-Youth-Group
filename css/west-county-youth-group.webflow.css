@@ -510,6 +510,44 @@ h3 {
   background-color: #eee;
 }
 
+.c-video {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 450px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+}
+
+.c-video-icon {
+  border-radius: 100%;
+  -webkit-transition: -webkit-transform 850ms cubic-bezier(.23, 1, .32, 1);
+  transition: -webkit-transform 850ms cubic-bezier(.23, 1, .32, 1);
+  transition: transform 850ms cubic-bezier(.23, 1, .32, 1);
+  transition: transform 850ms cubic-bezier(.23, 1, .32, 1), -webkit-transform 850ms cubic-bezier(.23, 1, .32, 1);
+}
+
+.c-video-icon:hover {
+  box-shadow: 0 0 30px 0 hsla(0, 0%, 100%, .6);
+  -webkit-transform: scale(1.09);
+  -ms-transform: scale(1.09);
+  transform: scale(1.09);
+}
+
 html.w-mod-js *[data-ix="fade-on-scroll"] {
   opacity: 0;
   -webkit-transform: translate(0px, 10px);
