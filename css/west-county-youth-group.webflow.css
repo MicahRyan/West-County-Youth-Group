@@ -548,6 +548,21 @@ h3 {
   transform: scale(1.09);
 }
 
+.description-image {
+  padding-left: 10px;
+}
+
+.video-section {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/NEW_appear.in_Desk_laptop_setup_2018.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/NEW_appear.in_Desk_laptop_setup_2018.jpg');
+  background-position: 0px 0px, 50% 0px;
+  background-size: auto, cover;
+  background-attachment: scroll, fixed;
+  color: #fff;
+}
+
 html.w-mod-js *[data-ix="fade-on-scroll"] {
   opacity: 0;
   -webkit-transform: translate(0px, 10px);
@@ -640,6 +655,13 @@ html.w-mod-js *[data-ix="fade-on-scroll"] {
     margin-right: 0px;
     margin-left: 0px;
   }
+  .description-image {
+    padding-left: 0px;
+  }
+  .video-section {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 }
 
 @media (max-width: 479px) {
@@ -707,6 +729,9 @@ html.w-mod-js *[data-ix="fade-on-scroll"] {
   .up-arrow-wrapper {
     width: 65px;
     height: 65px;
+  }
+  .description-image {
+    display: none;
   }
 }
 
